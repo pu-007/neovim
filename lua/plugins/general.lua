@@ -1,17 +1,16 @@
 return {
+  -- Lazy
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "gruvbox",
     },
   },
-
   { "ellisonleao/gruvbox.nvim" },
+  -- Tools
 
   { "lambdalisue/suda.vim", cmd = { "SudaRead", "SudaWrite" } },
   { "aohoyd/broot.nvim", opts = {} },
-  { "rescript-lang/vim-rescript", ft = "rescript" },
-
   {
     "keaising/im-select.nvim",
     config = function()
@@ -28,6 +27,7 @@ return {
       })
     end,
   },
+  -- Code
   {
     "stevearc/conform.nvim",
     opts = {
@@ -45,6 +45,7 @@ return {
       },
     },
   },
+  { "noearc/jieba.nvim", dependencies = { "noearc/jieba-lua" } },
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
@@ -68,4 +69,5 @@ return {
       }
     end,
   },
+  { "rescript-lang/vim-rescript", ft = "rescript" },
 }

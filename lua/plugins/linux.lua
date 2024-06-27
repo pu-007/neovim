@@ -1,9 +1,4 @@
-local platform = vim.loop.os_uname().sysname
-if platform == "Windows_NT" then
-  return {
-    "equalsraf/neovim-gui-shim",
-  }
-elseif platform == "Linux" then
+if vim.loop.os_uname().sysname == "Linux" then
   return {
     {
       "CRAG666/code_runner.nvim",
@@ -98,4 +93,6 @@ elseif platform == "Linux" then
       },
     },
   }
+else
+  return {}
 end

@@ -1,5 +1,18 @@
 if vim.loop.os_uname().sysname == "Linux" then
   return {
+    { "lambdalisue/suda.vim", cmd = { "SudaRead", "SudaWrite" } },
+    { "aohoyd/broot.nvim", opts = {} },
+    {
+      "mistricky/codesnap.nvim",
+      build = "make",
+      config = function()
+        require("codesnap").setup({
+          save_path = "/mnt/c/Users/Administrator/Downloads/",
+          has_breadcrumbs = false,
+        })
+      end,
+    },
+
     {
       "CRAG666/code_runner.nvim",
       keys = {

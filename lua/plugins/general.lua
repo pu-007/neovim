@@ -8,9 +8,6 @@ return {
   },
   { "ellisonleao/gruvbox.nvim" },
   -- Tools
-
-  { "lambdalisue/suda.vim", cmd = { "SudaRead", "SudaWrite" } },
-  { "aohoyd/broot.nvim", opts = {} },
   {
     "keaising/im-select.nvim",
     config = function()

@@ -15,6 +15,7 @@
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "code_runner.nvim": { "branch": "main", "commit": "6c5bfe44a6c7523350cd706e6b3b8101166eed99" },
   "codeium.nvim": { "branch": "main", "commit": "d3b88eb3aa1de6da33d325c196b8a41da2bcc825" },
+  "codesnap.nvim": { "branch": "main", "commit": "4b2aee0c402ee1ab690bede49c087d0aed329d0b" },
   "conform.nvim": { "branch": "master", "commit": "60e6fbddbdf37d7790de07dc7420beefaf650e5e" },
   "conjure": { "branch": "master", "commit": "a81977726f726b21d4bd75cea5bbbb7022005507" },
   "crates.nvim": { "branch": "main", "commit": "5d2751f3d31c952663ade44669b6b63efa06e295" },

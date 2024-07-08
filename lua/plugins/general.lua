@@ -17,16 +17,6 @@ return {
       require("im_select").setup({})
     end,
   },
-  {
-    "mistricky/codesnap.nvim",
-    build = "make",
-    config = function()
-      require("codesnap").setup({
-        save_path = "/mnt/c/Users/Administrator/Downloads/",
-        has_breadcrumbs = false,
-      })
-    end,
-  },
   -- Code
   {
     "stevearc/conform.nvim",

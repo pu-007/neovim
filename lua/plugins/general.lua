@@ -14,6 +14,62 @@ return {
       require("im_select").setup({})
     end,
   },
+  {
+    "rainbowhxch/accelerated-jk.nvim",
+    config = function()
+      require("accelerated-jk").setup({
+        mode = "time_driven",
+        enable_deceleration = false,
+        acceleration_motions = { "w", "b" },
+        acceleration_limit = 150,
+        acceleration_table = { 7, 12, 17, 21, 24, 26, 28, 30 },
+        deceleration_table = { { 150, 9999 } },
+      })
+    end,
+  },
+  {
+    "declancm/cinnamon.nvim",
+    version = "*", -- use latest release
+    opts = {
+      -- change default options here
+    },
+  },
+  {
+    "xiyaowong/transparent.nvim",
+    opts = function()
+      require("transparent").setup({ -- Optional, you don't have to run setup.
+        groups = { -- table: default groups
+          "Normal",
+          "NormalNC",
+          "Comment",
+          "Constant",
+          "Special",
+          "Identifier",
+          "Statement",
+          "PreProc",
+          "Type",
+          "Underlined",
+          "Todo",
+          "String",
+          "Function",
+          "Conditional",
+          "Repeat",
+          "Operator",
+          "Structure",
+          "LineNr",
+          "NonText",
+          "SignColumn",
+          "CursorLine",
+          "CursorLineNr",
+          "StatusLine",
+          "StatusLineNC",
+          "EndOfBuffer",
+        },
+        extra_groups = {}, -- table: additional groups that should be cleared
+        exclude_groups = {}, -- table: groups you don't want to clear
+      })
+    end,
+  },
   -- Code
   {
     "stevearc/conform.nvim",
@@ -32,7 +88,7 @@ return {
       },
     },
   },
-  { "noearc/jieba.nvim", dependencies = { "noearc/jieba-lua" } },
+  { "noearc/jieba.nvim", dependencies = { "noearc/jieba-lua" }, ft = { "markdown" } },
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {

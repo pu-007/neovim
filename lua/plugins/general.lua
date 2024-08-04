@@ -77,4 +77,5 @@ return {
     end,
   },
   { "rescript-lang/vim-rescript", ft = "rescript" },
+  { "ActivityWatch/aw-watcher-vim" },
 }

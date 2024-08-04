@@ -8,12 +8,12 @@ return {
   },
   { "ellisonleao/gruvbox.nvim" },
   -- Tools
-  {
-    "keaising/im-select.nvim",
-    config = function()
-      require("im_select").setup({})
-    end,
-  },
+  -- {
+  --   "keaising/im-select.nvim",
+  --   config = function()
+  --     require("im_select").setup({})
+  --   end,
+  -- },
   {
     "rainbowhxch/accelerated-jk.nvim",
     config = function()

@@ -1,2 +1,2 @@
-GuiFont! JetBrainsMono NF:h13
+GuiFont! JetXW:h13
 GuiWindowOpacity 0.9
